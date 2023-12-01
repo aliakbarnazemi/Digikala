@@ -1,2 +1,2 @@
 # Digikala
-I rebuild digikala template with html css js and bootstrap
+I built digikala template with html css js and bootstrap
