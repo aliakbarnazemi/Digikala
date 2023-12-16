@@ -1,0 +1,2124 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digikala</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <main dir="rtl">
+        <img src="assets/images/Top/top1.jpg" class="fixed-top w-100" alt="">
+        <!-- Start Header -->
+        <!-- Start Header For Desktop -->
+        <header class="desktop mt-5 container-fluid" style="width: 90%;">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary mt-5">
+                <div class="container-fluid mt-4">
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/images/logo.svg" alt="">
+                    </a>
+                    <button type="button" class="btn mx-5 btn-outline-light" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
+                        style="color: grey;display: flex;flex-direction: row;border: .5px solid rgb(224, 224, 224);">
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-search" viewBox="0 0 16 16">
+                                    <path
+                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                                </svg>
+                            </div>
+                            <div class="col-lg-9">
+                                جستجو
+                            </div>
+                        </div>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-lg-0">
+                            <li class="nav-item">
+                                <a class="btn btn-outline-light active" aria-current="page" href="#"
+                                    style="border: .5px solid rgb(224, 224, 224);">ورود |
+                                    ثبت
+                                    نام</a>
+                            </li>
+                            <li class="nav-item me-2">
+                                <a class="btn btn-outline-light active" href="#"
+                                    style="border: .5px solid rgb(224, 224, 224);">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-cart3" viewBox="0 0 16 16">
+                                        <path
+                                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="row m-3">
+                <div class="col-lg-9">
+                    <div class="d-flex">
+                        <a class="active category-link" id="link-1" onclick="opendd()">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                                class="bi bi-list" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                            </svg>
+                            دسته بندی ها
+                        </a>
+
+                        <a class="active p-1 category-link" id="link-2" onclick="closedd()">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                                class="bi bi-x-lg" viewBox="0 0 16 16">
+                                <path
+                                    d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                            </svg>
+                            دسته بندی ها
+                        </a>
+
+                        <a href="" class="navbar-link px-2 py-2">
+                            |
+                        </a>
+
+                        <a href="" class="navbar-link px-2 py-2">شگفت انگیز ها
+                            <div class="line"></div>
+                        </a>
+                        <a href="" class="navbar-link px-2 py-2">
+                            سوپر مارکت
+                            <div class="line"></div>
+                        </a>
+                        <a href="" class="navbar-link px-2 py-2">
+                            کارت هدیه
+                            <div class="line"></div>
+                        </a>
+                        <a href="" class="navbar-link px-2 py-2">
+                            پر فروش ترین ها
+                            <div class="line"></div>
+                        </a>
+                        <a href="" class="navbar-link px-2 py-2">
+                            تخفیف ها
+                            <div class="line"></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3" dir="ltr">
+                    <a href="#" class="navbar-link p-2 py-2">
+                        لطفا شهر خود را انتخاب کنید
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <div class="dropdown-category rounded shadow-lg text-dark" style="width: 85%;">
+            <div class="w-100" id="dropdown-content">
+                <div class="row w-100">
+                    <div class="col-3">
+                        <ul class="tabs">
+                            <li class="tab" onclick="openTab('tab1')">موبایل</li>
+                            <li class="tab" onclick="openTab('tab2')">کالای دیجیتال</li>
+                            <li class="tab" onclick="openTab('tab3')">خانه و آشپز خانه</li>
+                        </ul>
+                    </div>
+                    <div class="col-9">
+                        <div id="tab1Content" class="tab-content text-dark">
+                            <div class="row">
+                                <div class="col-lg-6 p-2">
+                                    <p class="fs-5">
+                                    <div class="d-flex" style="flex-direction: row;">
+                                        <div class="line-category" style="height: 22px;width: 2px;"></div>
+                                        <div style="width: 10px;"></div>
+                                        <div class="text-dark">
+                                            موبایل 1
+                                        </div>
+                                    </div>
+                                    </p>
+                                    <ul class="container-custom-3">
+                                        <li id="category-item">
+                                            <a href="" class="text-decoration-none text-center" style="color: grey;">
+                                                Mobile Item
+                                            </a>
+                                        </li>
+                                        <li id="category-item">
+                                            <a href="" class="text-decoration-none text-center" style="color: grey;">
+                                                Mobile Item
+                                            </a>
+                                        </li>
+                                        <li id="category-item">
+                                            <a href="" class="text-decoration-none text-center" style="color: grey;">
+                                                Mobile Item
+                                            </a>
+                                        </li>
+                                        <li id="category-item">
+                                            <a href="" class="text-decoration-none text-center" style="color: grey;">
+                                                Mobile Item
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6 p-2">
+                                    <p class="fs-5">
+                                    <div class="d-flex" style="flex-direction: row;">
+                                        <div class="line-category" style="height: 22px;width: 2px;"></div>
+                                        <div style="width: 10px;"></div>
+                                        <div class="text-dark">
+                                            موبایل 2
+                                        </div>
+                                    </div>
+                                    </p>
+                                    <ul class="container-custom-3">
+                                        <li id="category-item">
+                                            <a href="" class="text-decoration-none text-center" style="color: grey;">
+                                                Mobile Item
+                                            </a>
+                                        </li>
+                                        <li id="category-item">
+                                            <a href="" class="text-decoration-none text-center" style="color: grey;">
+                                                Mobile Item
+                                            </a>
+                                        </li>
+                                        <li id="category-item">
+                                            <a href="" class="text-decoration-none text-center" style="color: grey;">
+                                                Mobile Item
+                                            </a>
+                                        </li>
+                                        <li id="category-item">
+                                            <a href="" class="text-decoration-none text-center" style="color: grey;">
+                                                Mobile Item
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-lg-6 p-2">
+                                    <p class="fs-5">
+                                    <div class="d-flex" style="flex-direction: row;">
+                                        <div class="line-category" style="height: 22px;width: 2px;"></div>
+                                        <div style="width: 10px;"></div>
+                                        <div class="text-dark">
+                                            موبایل 3
+                                        </div>
+                                    </div>
+                                    </p>
+                                    <ul class="container-custom-3">
+                                        <li id="category-item">
+                                            <a href="" class="text-decoration-none text-center" style="color: grey;">
+                                                Mobile Item
+                                            </a>
+                                        </li>
+                                        <li id="category-item">
+                                            <a href="" class="text-decoration-none text-center" style="color: grey;">
+                                                Mobile Item
+                                            </a>
+                                        </li>
+                                        <li id="category-item">
+                                            <a href="" class="text-decoration-none text-center" style="color: grey;">
+                                                Mobile Item
+                                            </a>
+                                        </li>
+                                        <li id="category-item">
+                                            <a href="" class="text-decoration-none text-center" style="color: grey;">
+                                                Mobile Item
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6 p-2">
+                                    <p class="fs-5">
+                                    <div class="d-flex" style="flex-direction: row;">
+                                        <div class="line-category" style="height: 22px;width: 2px;"></div>
+                                        <div style="width: 10px;"></div>
+                                        <div class="text-dark">
+                                            موبایل 4
+                                        </div>
+                                    </div>
+                                    </p>
+                                    <ul class="container-custom-3">
+                                        <li id="category-item">
+                                            <a href="" class="text-decoration-none text-center" style="color: grey;">
+                                                Mobile Item
+                                            </a>
+                                        </li>
+                                        <li id="category-item">
+                                            <a href="" class="text-decoration-none text-center" style="color: grey;">
+                                                Mobile Item
+                                            </a>
+                                        </li>
+                                        <li id="category-item">
+                                            <a href="" class="text-decoration-none text-center" style="color: grey;">
+                                                Mobile Item
+                                            </a>
+                                        </li>
+                                        <li id="category-item">
+                                            <a href="" class="text-decoration-none text-center" style="color: grey;">
+                                                Mobile Item
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="tab2Content" class="tab-content text-white">
+                            <div class="row">
+                                <div class="col-lg-6 p-2">
+                                    <p class="fs-5 text-dark">
+                                    <div class="d-flex" style="flex-direction: row;">
+                                        <div class="line-category" style="height: 22px;width: 2px;"></div>
+                                        <div style="width: 10px;"></div>
+                                        <div class="text-dark">
+                                            دیجیتال 1
+                                        </div>
+                                    </div>
+                                    </p>
+                                    <ul class="container-custom-3">
+                                        <li id="category-item">
+                                            <a href="" class="text-decoration-none text-center" style="color: grey;">
+                                                Digital Item
+                                            </a>
+                                        </li>
+                                        <li id="category-item">
+                                            <a href="" class="text-decoration-none text-center" style="color: grey;">
+                                                Digital Item
+                                            </a>
+                                        </li>
+                                        <li id="category-item">
+                                            <a href="" class="text-decoration-none text-center" style="color: grey;">
+                                                Digital Item
+                                            </a>
+                                        </li>
+                                        <li id="category-item">
+                                            <a href="" class="text-decoration-none text-center" style="color: grey;">
+                                                Digital Item
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6 p-2">
+                                    <p class="fs-5 text-dark">
+                                    <div class="d-flex" style="flex-direction: row;">
+                                        <div class="line-category" style="height: 22px;width: 2px;"></div>
+                                        <div style="width: 10px;"></div>
+                                        <div class="text-dark">
+                                            دیجیتال 2
+                                        </div>
+                                    </div>
+                                    </p>
+                                    <ul class="container-custom-3">
+                                        <li id="category-item">
+                                            <a href="" class="text-decoration-none text-center" style="color: grey;">
+                                                Digital Item
+                                            </a>
+                                        </li>
+                                        <li id="category-item">
+                                            <a href="" class="text-decoration-none text-center" style="color: grey;">
+                                                Digital Item
+                                            </a>
+                                        </li>
+                                        <li id="category-item">
+                                            <a href="" class="text-decoration-none text-center" style="color: grey;">
+                                                Digital Item
+                                            </a>
+                                        </li>
+                                        <li id="category-item">
+                                            <a href="" class="text-decoration-none text-center" style="color: grey;">
+                                                Digital Item
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-lg-6 p-2">
+                                    <p class="fs-5 text-dark">
+                                    <div class="d-flex" style="flex-direction: row;">
+                                        <div class="line-category" style="height: 22px;width: 2px;"></div>
+                                        <div style="width: 10px;"></div>
+                                        <div class="text-dark">
+                                            دیجیتال 3
+                                        </div>
+                                    </div>
+                                    </p>
+                                    <ul class="container-custom-3">
+                                        <li id="category-item">
+                                            <a href="" class="text-decoration-none text-center" style="color: grey;">
+                                                Digital Item
+                                            </a>
+                                        </li>
+                                        <li id="category-item">
+                                            <a href="" class="text-decoration-none text-center" style="color: grey;">
+                                                Digital Item
+                                            </a>
+                                        </li>
+                                        <li id="category-item">
+                                            <a href="" class="text-decoration-none text-center" style="color: grey;">
+                                                Digital Item
+                                            </a>
+                                        </li>
+                                        <li id="category-item">
+                                            <a href="" class="text-decoration-none text-center" style="color: grey;">
+                                                Digital Item
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6 p-2">
+                                    <p class="fs-5 text-dark">
+                                    <div class="d-flex" style="flex-direction: row;">
+                                        <div class="line-category" style="height: 22px;width: 2px;"></div>
+                                        <div style="width: 10px;"></div>
+                                        <div class="text-dark">
+                                            دیجیتال 4
+                                        </div>
+                                    </div>
+                                    </p>
+                                    <ul class="container-custom-3">
+                                        <li id="category-item">
+                                            <a href="" class="text-decoration-none text-center" style="color: grey;">
+                                                Digital Item
+                                            </a>
+                                        </li>
+                                        <li id="category-item">
+                                            <a href="" class="text-decoration-none text-center" style="color: grey;">
+                                                Digital Item
+                                            </a>
+                                        </li>
+                                        <li id="category-item">
+                                            <a href="" class="text-decoration-none text-center" style="color: grey;">
+                                                Digital Item
+                                            </a>
+                                        </li>
+                                        <li id="category-item">
+                                            <a href="" class="text-decoration-none text-center" style="color: grey;">
+                                                Digital Item
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="tab3Content" class="tab-content text-white">
+                            <div class="row">
+                                <div class="col-lg-4 p-2">
+                                    <p class="fs-5 text-dark">
+                                    <div class="d-flex" style="flex-direction: row;">
+                                        <div class="line-category" style="height: 22px;width: 2px;"></div>
+                                        <div style="width: 10px;"></div>
+                                        <div class="text-dark">
+                                            آشپز خانه 1
+                                        </div>
+                                    </div>
+                                    </p>
+                                    <ul class="container-custom-3">
+                                        <li id="category-item">
+                                            <a href="" class="text-decoration-none text-center" style="color: grey;">
+                                                Kitchen Item
+                                            </a>
+                                        </li>
+                                        <li id="category-item">
+                                            <a href="" class="text-decoration-none text-center" style="color: grey;">
+                                                Kitchen Item
+                                            </a>
+                                        </li>
+                                        <li id="category-item">
+                                            <a href="" class="text-decoration-none text-center" style="color: grey;">
+                                                Kitchen Item
+                                            </a>
+                                        </li>
+                                        <li id="category-item">
+                                            <a href="" class="text-decoration-none text-center" style="color: grey;">
+                                                Kitchen Item
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-4 p-2">
+                                    <p class="fs-5 text-dark">
+                                    <div class="d-flex" style="flex-direction: row;">
+                                        <div class="line-category" style="height: 22px;width: 2px;"></div>
+                                        <div style="width: 10px;"></div>
+                                        <div class="text-dark">
+                                            آشپز خانه 2
+                                        </div>
+                                    </div>
+                                    </p>
+                                    <ul class="container-custom-3">
+                                        <li id="category-item">
+                                            <a href="" class="text-decoration-none text-center" style="color: grey;">
+                                                Kitchen Item
+                                            </a>
+                                        </li>
+                                        <li id="category-item">
+                                            <a href="" class="text-decoration-none text-center" style="color: grey;">
+                                                Kitchen Item
+                                            </a>
+                                        </li>
+                                        <li id="category-item">
+                                            <a href="" class="text-decoration-none text-center" style="color: grey;">
+                                                Kitchen Item
+                                            </a>
+                                        </li>
+                                        <li id="category-item">
+                                            <a href="" class="text-decoration-none text-center" style="color: grey;">
+                                                Kitchen Item
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-4 p-2">
+                                    <p class="fs-5 text-dark">
+                                    <div class="d-flex" style="flex-direction: row;">
+                                        <div class="line-category" style="height: 22px;width: 2px;"></div>
+                                        <div style="width: 10px;"></div>
+                                        <div class="text-dark">
+                                            آشپز خانه 3
+                                        </div>
+                                    </div>
+                                    </p>
+                                    <ul class="container-custom-3">
+                                        <li id="category-item">
+                                            <a href="" class="text-decoration-none text-center" style="color: grey;">
+                                                Kitchen Item
+                                            </a>
+                                        </li>
+                                        <li id="category-item">
+                                            <a href="" class="text-decoration-none text-center" style="color: grey;">
+                                                Kitchen Item
+                                            </a>
+                                        </li>
+                                        <li id="category-item">
+                                            <a href="" class="text-decoration-none text-center" style="color: grey;">
+                                                Kitchen Item
+                                            </a>
+                                        </li>
+                                        <li id="category-item">
+                                            <a href="" class="text-decoration-none text-center" style="color: grey;">
+                                                Kitchen Item
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-lg-4 p-2">
+                                    <p class="fs-5 text-dark">
+                                    <div class="d-flex" style="flex-direction: row;">
+                                        <div class="line-category" style="height: 22px;width: 2px;"></div>
+                                        <div style="width: 10px;"></div>
+                                        <div class="text-dark">
+                                            آشپز خانه 4
+                                        </div>
+                                    </div>
+                                    </p>
+                                    <ul class="container-custom-3">
+                                        <li id="category-item">
+                                            <a href="" class="text-decoration-none text-center" style="color: grey;">
+                                                Kitchen Item
+                                            </a>
+                                        </li>
+                                        <li id="category-item">
+                                            <a href="" class="text-decoration-none text-center" style="color: grey;">
+                                                Kitchen Item
+                                            </a>
+                                        </li>
+                                        <li id="category-item">
+                                            <a href="" class="text-decoration-none text-center" style="color: grey;">
+                                                Kitchen Item
+                                            </a>
+                                        </li>
+                                        <li id="category-item">
+                                            <a href="" class="text-decoration-none text-center" style="color: grey;">
+                                                Kitchen Item
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-4 p-2">
+                                    <p class="fs-5 text-dark">
+                                    <div class="d-flex" style="flex-direction: row;">
+                                        <div class="line-category" style="height: 22px;width: 2px;"></div>
+                                        <div style="width: 10px;"></div>
+                                        <div class="text-dark">
+                                            آشپز خانه 5
+                                        </div>
+                                    </div>
+                                    </p>
+                                    <ul class="container-custom-3">
+                                        <li id="category-item">
+                                            <a href="" class="text-decoration-none text-center" style="color: grey;">
+                                                Kitchen Item
+                                            </a>
+                                        </li>
+                                        <li id="category-item">
+                                            <a href="" class="text-decoration-none text-center" style="color: grey;">
+                                                Kitchen Item
+                                            </a>
+                                        </li>
+                                        <li id="category-item">
+                                            <a href="" class="text-decoration-none text-center" style="color: grey;">
+                                                Kitchen Item
+                                            </a>
+                                        </li>
+                                        <li id="category-item">
+                                            <a href="" class="text-decoration-none text-center" style="color: grey;">
+                                                Kitchen Item
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-lg-4 p-2">
+                                    <p class="fs-5 text-dark">
+                                    <div class="d-flex" style="flex-direction: row;">
+                                        <div class="line-category" style="height: 22px;width: 2px;"></div>
+                                        <div style="width: 10px;"></div>
+                                        <div class="text-dark">
+                                            آشپز خانه 6
+                                        </div>
+                                    </div>
+                                    </p>
+                                    <ul class="container-custom-3">
+                                        <li id="category-item">
+                                            <a href="" class="text-decoration-none text-center" style="color: grey;">
+                                                Kitchen Item
+                                            </a>
+                                        </li>
+                                        <li id="category-item">
+                                            <a href="" class="text-decoration-none text-center" style="color: grey;">
+                                                Kitchen Item
+                                            </a>
+                                        </li>
+                                        <li id="category-item">
+                                            <a href="" class="text-decoration-none text-center" style="color: grey;">
+                                                Kitchen Item
+                                            </a>
+                                        </li>
+                                        <li id="category-item">
+                                            <a href="" class="text-decoration-none text-center" style="color: grey;">
+                                                Kitchen Item
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- End Header For Desktop -->
+
+        <!-- Start Header For Mobile -->
+        <header class="mobile w-100" dir="rtl">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid mt-3">
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/images/logo.svg" alt="">
+                    </a>
+                    <button class="navbar-toggler" onclick="_Menu()" id="open-menu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-toggler" id="close-menu" onclick="Close()">
+                        <span class="navbar-toggler-icon"></span>
+                    </a>
+                    <ul class="mt-2 w-100 bg-tertiary container-fluid rounded bg-dark" id="menu">
+                        <li>
+                            <a href="#" class="bg-dark">منوی اول</a>
+                        </li>
+                        <li>
+                            <a href="#" class="bg-dark">منوی دوم</a>
+                        </li>
+                        <li>
+                            <a href="#" class="bg-dark">منوی سوم</a>
+                        </li>
+                        <li>
+                            <a href="#" class="bg-dark">منوی چهارم</a>
+                        </li>
+                        <li>
+                            <a href="#" class="bg-dark">منوی پنجم</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- End Header For Mobile -->
+
+        <!-- End Header -->
+
+        <!-- Start Slider -->
+        <div class="swiper w-100 h-100" id="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="assets/images/slider/slider01.jpg" class=" w-100 h-100" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/images/slider/slider02.gif" class=" w-100 h-100" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/images/slider/slider03.jpg" class=" w-100 h-100" alt="">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next">
+            </div>
+        </div>
+        <!-- End Slider -->
+
+        <!-- Start Options -->
+        <section class="container-fluid container-xxl mt-5">
+            <div class="row">
+                <div class="col-lg-6 p-2">
+                    <div class="row">
+                        <a href="#" class="col text-decoration-none text-dark text-center" style="font-size: 12px;">
+                            <img src="assets/images/options/option1.jpg" class="w-50" alt="">
+                            <br>
+                            <br>
+                            بیشترین تخفیف ها
+                        </a>
+                        <a href="#" class="col text-decoration-none text-dark text-center" style="font-size: 12px;">
+                            <img src="assets/images/options/option2.jpg" class="w-50" alt="">
+                            <br>
+                            <br>
+                            شکار گنج
+                        </a>
+                        <a href="#" class="col text-decoration-none text-dark text-center" style="font-size: 12px;">
+                            <img src="assets/images/options/option3.jpg" class="w-50" alt="">
+                            <br>
+                            <br>
+                            دریافت وام
+                        </a>
+                        <a href="#" class="col text-decoration-none text-dark text-center" style="font-size: 12px;">
+                            <img src="assets/images/options/option4.png" class="w-50" alt="">
+                            <br>
+                            <br>
+                            بلک فرایدی استایل
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 p-2">
+                    <div class="row">
+                        <a href="#" class="col text-decoration-none text-dark text-center" style="font-size: 12px;">
+                            <img src="assets/images/options/option5.jpg" class="w-50" alt="">
+                            <br>
+                            <br>
+                            قرعه کشی PS5
+                        </a>
+                        <a href="#" class="col text-decoration-none text-dark text-center" style="font-size: 12px;">
+                            <img src="assets/images/options/option6.jpg" class="w-50" alt="">
+                            <br>
+                            <br>
+                            کد های تخفیف
+                        </a>
+                        <a href="#" class="col text-decoration-none text-dark text-center" style="font-size: 12px;">
+                            <img src="assets/images/options/option8.jpg" class="w-50" alt="">
+                            <br>
+                            <br>
+                            حراج اقتصادی
+                        </a>
+                        <a href="#" class="col text-decoration-none text-dark text-center"
+                            style="font-size: 12px;display: flex;justify-content: center;align-items: center;flex-direction: column;">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-50 text-dark"
+                                style="display: flex;justify-content: center;align-items: center;" fill="currentColor"
+                                class="bi bi-three-dots" viewBox="0 0 16 16">
+                                <path
+                                    d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3" />
+                            </svg>
+                            <br>
+                            بیشتر
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Options -->
+
+        <!-- Start Offer1 -->
+        <section class="mt-5 container-fluid container-xxl shadow-lg" style="border-radius: 16px;" id="offer1">
+            <br>
+            <div class="container rounded">
+                <div class="swiper container" id="slider2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="container">
+                                <img src="assets/images/Offer1/offer01.svg" class="container w-50 container-custom"
+                                    alt="...">
+                                <br>
+                                <img src="assets/images/Offer1/offer02.png" class="container w-50 container-custom"
+                                    alt="">
+                                <a href="" class="text-center text-decoration-none text-white container-custom">مشاهده
+                                    همه ></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="container">
+                                <div class="card">
+                                    <img src="assets/images/Offer1/offer03.jpg" class="card-img">
+                                    <h4 class="text-center text-decoration-line-through text-danger">
+                                        18,500 تومان
+                                    </h4>
+                                    <br>
+                                    <h5 class="text-success text-center fs-6">
+                                        14,000 تومان
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="container">
+                                <div class="card">
+                                    <img src="assets/images/Offer1/offer03.jpg" class="card-img">
+                                    <h4 class="text-center text-decoration-line-through text-danger">
+                                        18,500 تومان
+                                    </h4>
+                                    <br>
+                                    <h5 class="text-success text-center fs-6">
+                                        14,000 تومان
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="container">
+                                <div class="card">
+                                    <img src="assets/images/Offer1/offer03.jpg" class="card-img">
+                                    <h4 class="text-center text-decoration-line-through text-danger">
+                                        18,500 تومان
+                                    </h4>
+                                    <br>
+                                    <h5 class="text-success text-center fs-6">
+                                        14,000 تومان
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="container">
+                                <div class="card">
+                                    <img src="assets/images/Offer1/offer03.jpg" class="card-img">
+                                    <h4 class="text-center text-decoration-line-through text-danger">
+                                        18,500 تومان
+                                    </h4>
+                                    <br>
+                                    <h5 class="text-success text-center fs-6">
+                                        14,000 تومان
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="container">
+                                <div class="card">
+                                    <img src="assets/images/Offer1/offer03.jpg" class="card-img">
+                                    <h4 class="text-center text-decoration-line-through text-danger">
+                                        18,500 تومان
+                                    </h4>
+                                    <br>
+                                    <h5 class="text-success text-center fs-6">
+                                        14,000 تومان
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="container">
+                                <div class="card">
+                                    <img src="assets/images/Offer1/offer03.jpg" class="card-img">
+                                    <h4 class="text-center text-decoration-line-through text-danger">
+                                        18,500 تومان
+                                    </h4>
+                                    <br>
+                                    <h5 class="text-success text-center fs-6">
+                                        14,000 تومان
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="container">
+                                <div class="card">
+                                    <img src="assets/images/Offer1/offer03.jpg" class="card-img">
+                                    <h4 class="text-center text-decoration-line-through text-danger">
+                                        18,500 تومان
+                                    </h4>
+                                    <br>
+                                    <h5 class="text-success text-center fs-6">
+                                        14,000 تومان
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="container">
+                                <div class="card">
+                                    <img src="assets/images/Offer1/offer03.jpg" class="card-img">
+                                    <h4 class="text-center text-decoration-line-through text-danger">
+                                        18,500 تومان
+                                    </h4>
+                                    <br>
+                                    <h5 class="text-success text-center fs-6">
+                                        14,000 تومان
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="container">
+                                <div class="card">
+                                    <img src="assets/images/Offer1/offer03.jpg" class="card-img">
+                                    <h4 class="text-center text-decoration-line-through text-danger">
+                                        18,500 تومان
+                                    </h4>
+                                    <br>
+                                    <h5 class="text-success text-center fs-6">
+                                        14,000 تومان
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="container">
+                                <div class="card">
+                                    <img src="assets/images/Offer1/offer03.jpg" class="card-img">
+                                    <h4 class="text-center text-decoration-line-through text-danger">
+                                        18,500 تومان
+                                    </h4>
+                                    <br>
+                                    <h5 class="text-success text-center fs-6">
+                                        14,000 تومان
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="container">
+                                <div class="card">
+                                    <img src="assets/images/Offer1/offer03.jpg" class="card-img">
+                                    <h4 class="text-center text-decoration-line-through text-danger">
+                                        18,500 تومان
+                                    </h4>
+                                    <br>
+                                    <h5 class="text-success text-center fs-6">
+                                        14,000 تومان
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="container">
+                                <div class="card">
+                                    <img src="assets/images/Offer1/offer03.jpg" class="card-img">
+                                    <h4 class="text-center text-decoration-line-through text-danger">
+                                        18,500 تومان
+                                    </h4>
+                                    <br>
+                                    <h5 class="text-success text-center fs-6">
+                                        14,000 تومان
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="container">
+                                <div class="card">
+                                    <img src="assets/images/Offer1/offer03.jpg" class="card-img">
+                                    <h4 class="text-center text-decoration-line-through text-danger">
+                                        18,500 تومان
+                                    </h4>
+                                    <br>
+                                    <h5 class="text-success text-center fs-6">
+                                        14,000 تومان
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next">
+                    </div>
+                </div>
+            </div>
+            <br>
+        </section>
+        <!-- End Offer1 -->
+
+
+        <!-- Start Offer2 -->
+        <section class="mt-5 container-fluid container-xxl shadow-lg" id="offer2" style="border-radius: 16px;">
+            <br>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 p-1" dir="rtl">
+                        <div class="row">
+                            <div class="col-lg-2">
+                                <img src="assets/images/Offer2/offer1.png" class="h-100 w-100" alt="">
+                            </div>
+                            <div class="col-lg-6">
+                                <img src="assets/images/Offer2/offer2.svg" class="container-custom"
+                                    style="margin: 20px auto;" alt="">
+                            </div>
+                            <div class="col-lg-2 container-custom" style="margin: 10px auto;">
+                                <span class="badge rounded-pill fs-6" style="background-color: rgb(123, 197, 13);">
+                                    تا 45% تخفیف
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 p-1">
+                        <div class="container w-100">
+                            <div class="row">
+                                <div class="col-lg-7"></div>
+                                <div class="col-lg-5 container-custom">
+                                    <a href="" class="btn rounded-pill text-center w-100"
+                                        style="background-color: white;color: rgb(157, 201, 92);margin: 10px auto;">
+                                        بیش از 100 کالا
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+        </section>
+        <!-- End Offer2 -->
+
+        <!-- Start Sections -->
+        <section class="mt-5 container-fluid container-xxl">
+            <div class="row">
+                <div class="col-lg-3 p-2">
+                    <img src="assets/images/Sections/section1.webp" style="width: 100%;" alt="">
+                </div>
+                <div class="col-lg-3 p-2">
+                    <img src="assets/images/Sections/section2.webp" style="width: 100%;" alt="">
+                </div>
+                <div class="col-lg-3 p-2">
+                    <img src="assets/images/Sections/section3.webp" style="width: 100%;" alt="">
+                </div>
+                <div class="col-lg-3 p-2">
+                    <img src="assets/images/Sections/section4.webp" style="width: 100%;" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- End Sections -->
+
+        <!-- Start Categories mobile -->
+        <section class="mt-5 container-fluid container-xxl mobile">
+            <h3 class="fs-4 text-center">
+                خرید بر اساس دسته بندی
+            </h3>
+            <br>
+            <div class="row mt-3">
+                <div class="col-lg p-5 text-center">
+                    <img src="assets/images/Categories/Category01.png" class="w-50" alt="">
+                    <br>
+                    موبایل
+                </div>
+                <div class="col-lg p-5 text-center">
+                    <img src="assets/images/Categories/Category01.png" class="w-50" alt="">
+                    <br>
+                    موبایل
+                </div>
+                <div class="col-lg p-5 text-center">
+                    <img src="assets/images/Categories/Category01.png" class="w-50" alt="">
+                    <br>
+                    موبایل
+                </div>
+                <br>
+                <a href="" class="container w-75 btn btn-outline-light text-dark shadow-lg"
+                    style="border: .5px solid rgb(224, 224, 224);">
+                    مشاهده کامل دسته بندی ها >
+                </a>
+            </div>
+        </section>
+        <!-- End Categories mobile -->
+
+        <!-- Start Categories desktop -->
+        <section class="mt-5 container-fluid container-xxl desktop">
+            <h3 class="fs-4 text-center">
+                خرید بر اساس دسته بندی
+            </h3>
+            <br>
+            <div class="row mt-3">
+                <div class="col text-center" style="font-size: 12px;">
+                    <img src="assets/images/Categories/Category01.png" class="h-75 w-50" alt="">
+                    <br>
+                    <br>
+                    موبایل
+                </div>
+                <div class="col text-center" style="font-size: 12px;">
+                    <img src="assets/images/Categories/Category01.png" class="h-75 w-50" alt="">
+                    <br>
+                    <br>
+                    کالای دیجیتال
+                </div>
+                <div class="col text-center" style="font-size: 12px;">
+                    <img src="assets/images/Categories/Category01.png" class="h-75 w-50" alt="">
+                    <br>
+                    <br>
+                    خانه و آشپز خانه
+                </div>
+                <div class="col text-center" style="font-size: 12px;">
+                    <img src="assets/images/Categories/Category01.png" class="h-75 w-50" alt="">
+                    <br>
+                    <br>
+                    مد و پوشاک
+                </div>
+                <div class="col text-center" style="font-size: 12px;">
+                    <img src="assets/images/Categories/Category01.png" class="h-75 w-50" alt="">
+                    <br>
+                    <br>
+                    کالاهای سوپر مارکتی
+                </div>
+                <div class="col text-center" style="font-size: 12px;">
+                    <img src="assets/images/Categories/Category01.png" class="h-75 w-50" alt="">
+                    <br>
+                    <br>
+                    لوازم التحریر
+                </div>
+                <div class="col text-center" style="font-size: 12px;">
+                    <img src="assets/images/Categories/Category01.png" class="h-75 w-50" alt="">
+                    <br>
+                    <br>
+                    اسباب بازی
+                </div>
+
+            </div>
+            <br>
+            <div class="row container">
+                <div class="col text-center" style="font-size: 12px;">
+                    <img src="assets/images/Categories/Category01.png" class="h-75 w-50" alt="">
+                    <br>
+                    <br>
+                    زیبایی و سلامت
+                </div>
+                <div class="col text-center" style="font-size: 12px;">
+                    <img src="assets/images/Categories/Category01.png" class="h-75 w-50" alt="">
+                    <br>
+                    <br>
+                    ورزش و سفر
+                </div>
+                <div class="col text-center" style="font-size: 12px;">
+                    <img src="assets/images/Categories/Category01.png" class="h-75 w-50" alt="">
+                    <br>
+                    <br>
+                    ابزار آلات و تجهیزات
+                </div>
+                <div class="col text-center" style="font-size: 12px;">
+                    <img src="assets/images/Categories/Category01.png" class="h-75 w-50" alt="">
+                    <br>
+                    <br>
+                    خودرو و موتور سیکلت
+                </div>
+                <div class="col text-center" style="font-size: 12px;">
+                    <img src="assets/images/Categories/Category01.png" class="h-75 w-50" alt="">
+                    <br>
+                    <br>
+                    محصولات بومی و محلی
+                </div>
+                <div class="col text-center" style="font-size: 12px;">
+                    <img src="assets/images/Categories/Category01.png" class="h-75 w-50" alt="">
+                    <br>
+                    <br>
+                    کارت هدیه
+                </div>
+            </div>
+        </section>
+        <!-- End Categories desktop -->
+
+        <!-- Start After Categories -->
+        <section class="container-fluid container-xxl mt-5">
+            <div class="row">
+                <div class="col-lg-6 p-2">
+                    <a href="">
+                        <img src="assets/images/After Category/A - Category1.jpg" class="w-100"
+                            style="border-radius: 16px;" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-6 p-2">
+                    <a href="">
+                        <img src="assets/images/After Category/A - Category2.jpg" class="w-100"
+                            style="border-radius: 16px;" alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- End After Categories -->
+
+
+        <!-- Start Offer 3 -->
+        <section class="text-center fs-3 mt-5">
+            پیشنهاد دیجیکالا
+        </section>
+        <br>
+        <section class="container-fluid container-xxl desktop"
+            style="border: .5px solid rgb(224, 224, 224);border-radius: 16px;">
+            <div class="container-custom">
+                <div class="row">
+                    <div class="col">
+                        <img src="assets/images/Offer3/offer01.jpg" alt="" class="w-50 container-custom">
+                        <p class="text-center">
+                            گوشی موبایل
+                        </p>
+                    </div>
+                    <div class="col">
+                        <img src="assets/images/Offer3/offer01.jpg" alt="" class="w-50 container-custom">
+                        <p class="text-center">
+                            هدفون هدست و ...
+                        </p>
+                    </div>
+                    <div class="col">
+                        <img src="assets/images/Offer3/offer01.jpg" alt="" class="w-50 container-custom">
+                        <p class="text-center">
+                            ساعت هوشمند
+                        </p>
+                    </div>
+                    <div class="col">
+                        <img src="assets/images/Offer3/offer01.jpg" alt="" class="w-50 container-custom">
+                        <p class="text-center">
+                            لپتاب و الترابوک
+                        </p>
+                    </div>
+                    <div class="col">
+                        <img src="assets/images/Offer3/offer01.jpg" alt="" class="w-50 container-custom">
+                        <p class="text-center">
+                            کنسول خانگی
+                        </p>
+                    </div>
+                    <div class="col">
+                        <img src="assets/images/Offer3/offer01.jpg" alt="" class="w-50 container-custom">
+                        <p class="text-center">
+                            مکمل دارویی
+                        </p>
+                    </div>
+                    <div class="col">
+                        <img src="assets/images/Offer3/offer01.jpg" alt="" class="w-50 container-custom">
+                        <p class="text-center">
+                            تبلت
+                        </p>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col">
+                        <img src="assets/images/Offer3/offer01.jpg" alt="" class="w-50 container-custom">
+                        <p class="text-center">
+                            لامپ و چراغ
+                        </p>
+                    </div>
+                    <div class="col">
+                        <img src="assets/images/Offer3/offer01.jpg" alt="" class="w-50 container-custom">
+                        <p class="text-center">
+                            تجهیزات جانبی و ایروبیک و ...
+                        </p>
+                    </div>
+                    <div class="col">
+                        <img src="assets/images/Offer3/offer01.jpg" alt="" class="w-50 container-custom">
+                        <p class="text-center">
+                            سرخ کن
+                        </p>
+                    </div>
+                    <div class="col">
+                        <img src="assets/images/Offer3/offer01.jpg" alt="" class="w-50 container-custom">
+                        <p class="text-center">
+                            بخاری برقی
+                        </p>
+                    </div>
+                    <div class="col">
+                        <img src="assets/images/Offer3/offer01.jpg" alt="" class="w-50 container-custom">
+                        <p class="text-center">
+                            جوراب مردانه
+                        </p>
+                    </div>
+                    <div class="col">
+                        <img src="assets/images/Offer3/offer01.jpg" alt="" class="w-50 container-custom">
+                        <p class="text-center">
+                            گوشی موبایل
+                        </p>
+                    </div>
+                    <div class="col">
+                        <img src="assets/images/Offer3/offer01.jpg" alt="" class="w-50 container-custom">
+                        <p class="text-center">
+                            مکمل ورزشی
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid container-xxl mobile"
+            style="border: .5px solid rgb(224, 224, 224);border-radius: 16px;">
+            <div class="container-custom">
+                <div class="row">
+                    <div class="col-lg p-5">
+                        <img src="assets/images/Offer3/offer01.jpg" alt="" class="w-50 container-custom">
+                        <p class="text-center">
+                            گوشی موبایل
+                        </p>
+                    </div>
+                    <div class="col-lg p-5">
+                        <img src="assets/images/Offer3/offer02.jpg" alt="" class="w-50 container-custom">
+                        <p class="text-center">
+                            هدفون هدست و ...
+                        </p>
+                    </div>
+                    <div class="col-lg p-5">
+                        <img src="assets/images/Offer3/offer03.jpg" alt="" class="w-50 container-custom">
+                        <p class="text-center">
+                            ساعت هوشمند
+                        </p>
+                    </div>
+                    <div class="col-lg p-5">
+                        <img src="assets/images/Offer3/offer04.jpg" alt="" class="w-50 container-custom">
+                        <p class="text-center">
+                            لپتاب و الترابوک
+                        </p>
+                    </div>
+                    <br>
+                    <a href="" class="container w-75 btn btn-outline-light text-dark shadow-lg"
+                        style="border: .5px solid rgb(224, 224, 224);">
+                        مشاهده کامل پیشنهاد ها >
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- End Offer 3 -->
+
+        <!-- Start Brands -->
+        <section class="container-fluid container-xxl mt-5"
+            style="border: .5px solid rgb(224, 224, 224);border-radius: 16px;">
+            <br>
+            <h3 class="text-center">
+                محبوب ترین برند ها
+            </h3>
+            <br>
+            <div class="swiper container" id="slider3">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="container">
+                            <img src="assets/images/Brands/brand01.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container">
+                            <img src="assets/images/Brands/brand01.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container">
+                            <img src="assets/images/Brands/brand01.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container">
+                            <img src="assets/images/Brands/brand01.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container">
+                            <img src="assets/images/Brands/brand01.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container">
+                            <img src="assets/images/Brands/brand01.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container">
+                            <img src="assets/images/Brands/brand01.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container">
+                            <img src="assets/images/Brands/brand01.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container">
+                            <img src="assets/images/Brands/brand01.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container">
+                            <img src="assets/images/Brands/brand01.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container">
+                            <img src="assets/images/Brands/brand01.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next">
+                </div>
+            </div>
+        </div>
+        </section>
+        <!-- End Brands -->
+
+        <!-- Start After Brands -->
+        <section class="container-fluid container-xxl mt-5">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="assets/images/After Brands/A - Brand1.jpg" class="h-75 rounded" alt="">
+                </div>
+                <div class="col-lg-6">
+                    <img src="assets/images/After Brands/A - Brand2.jpg" class="h-75 rounded" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- End After Brands -->
+
+        <!-- Start Most Sold 
+        <section class="container-fluid container-xxl mt-5"
+            style="border: .5px solid rgb(224, 224, 224);border-radius: 16px;">
+            <a href="" class="text-decoration-none" dir="ltr"
+                style="display: flex;justify-content: start;top: 0;left: 0;margin-top: 10px;">مشاهده
+                همه</a>
+            <h3 class="text-center">
+                پر فروش ترین کالاها
+            </h3>
+            <br>
+            <div class="row">
+                <div class="col">
+                </div>
+                <div class="col">
+
+                </div>
+                <div class="col">
+
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col">
+
+                </div>
+                <div class="col">
+
+                </div>
+                <div class="col">
+
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col">
+
+                </div>
+                <div class="col">
+
+                </div>
+                <div class="col">
+
+                </div>
+            </div>
+        </section>
+         End Most Sold -->
+
+        <!-- Start Blog -->
+        <section class="container-fluid container-xxl mt-5">
+            <h5 class="text-end">خواندنی ها</h5>
+            <br>
+            <div class="row">
+                <div class="col-lg-3 p-2">
+                    <div class="card">
+                        <img src="assets/images/Blog/blog1.jpg" class="card-img-top" style="height: 200px;" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 p-2">
+                    <div class="card">
+                        <img src="assets/images/Blog/blog1.jpg" class="card-img-top" style="height: 200px;" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 p-2">
+                    <div class="card">
+                        <img src="assets/images/Blog/blog1.jpg" class="card-img-top" style="height: 200px;" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 p-2">
+                    <div class="card">
+                        <img src="assets/images/Blog/blog1.jpg" class="card-img-top" style="height: 200px;" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Blog -->
+
+        <!-- Start After Blog -->
+        <section class="container-fluid mt-5" style="width: 80%;">
+            <img src="assets/images/After Blog/A - Blog1.svg" alt="">
+            <br>
+            <br>
+            <p class="text-end" style="font-size: 12px;">تلفن پشتیبانی ۶۱۹۳۰۰۰۰ - ۰۲۱ | ۷ روز هفته، ۲۴ ساعته پاسخگوی شما
+                هستیم
+
+            </p>
+            <br>
+            <div class="container-xxl">
+                <div class="row">
+                    <div class="col-lg m-2 container-custom text-center" style="font-size: 12px;">
+                        <img src="assets/images/After Blog/A - Blog2.svg" alt="" class=" h-50 w-50">
+                        <br>
+                        امکان تحویل اکسپرس
+                    </div>
+                    <div class="col-lg m-2 container-custom text-center" style="font-size: 12px;">
+                        <img src="assets/images/After Blog/A - Blog3.svg" alt="" class="h-50 w-50">
+                        <br>
+                        امکان پرداخت در محل
+                    </div>
+                    <div class="col-lg m-2 container-custom text-center" style="font-size: 12px;">
+                        <img src="assets/images/After Blog/A - Blog4.svg" alt="" class="h-50 w-50">
+                        <br>
+                        7 روز هفته - 24 ساعته
+                    </div>
+                    <div class="col-lg m-2 container-custom text-center" style="font-size: 12px;">
+                        <img src="assets/images/After Blog/A - Blog5.svg" alt="" class="h-50 w-50">
+                        <br>
+                        هفت روز ضمانت بازگشت کالا
+                    </div>
+                    <div class="col-lg m-2 container-custom text-center" style="font-size: 12px;">
+                        <img src="assets/images/After Blog/A - Blog6.svg" alt="" class="h-50 w-50">
+                        <br>
+                        ضمانت اصل بودن کالا
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End After Blog -->
+
+        <!-- Start Footer -->
+        <footer class="container-fluid mt-5" style="width: 90%;">
+            <div class="row">
+                <div class="col-lg p-2 text-end">
+                    <h5 class="text-end">با دیجیکالا</h5>
+                    <br>
+                    <a href="" class="footer-link">
+                        اتاق خبر دیجی‌کالا
+                    </a>
+                    <br>
+                    <br>
+                    <a href="" class="footer-link">
+                        فروش در دیجی‌کالا
+                    </a>
+                    <br>
+                    <br>
+                    <a href="" class="footer-link">
+                        فرصت‌های شغلی
+                    </a>
+                    <br>
+                    <br>
+                    <a href="" class="footer-link">
+                        گزارش تخلف در دیجی‌کالا
+                    </a>
+                    <br>
+                    <br>
+                    <a href="" class="footer-link">
+                        تماس با دیجی‌کالا
+                    </a>
+                    <br>
+                    <br>
+                    <a href="" class="footer-link">
+                        درباره دیجی‌کالا
+                    </a>
+
+                </div>
+                <div class="col-lg p-2 text-end">
+                    <h5 class="text-end">
+                        خدمات مشتریان
+                    </h5>
+                    <br>
+                    <a href="" class="footer-link">
+                        پاسخ به پرسش‌های متداول
+                    </a>
+                    <br>
+                    <br>
+                    <a href="" class="footer-link">
+                        رویه های بازگرداندن کالا
+                    </a>
+                    <br>
+                    <br>
+                    <a href="" class="footer-link">
+                        شرایط استفاده
+                    </a>
+                    <br>
+                    <br>
+                    <a href="" class="footer-link">
+                        حریم خصوصی
+                    </a>
+                    <br>
+                    <br>
+                    <a href="" class="footer-link">
+                        گزارش باگ
+                    </a>
+                </div>
+                <div class="col-lg p-2 text-end">
+                    <h5 class="text-end">
+                        راهنمای خرید از دیجی‌کالا
+                    </h5>
+                    <br>
+                    <a href="" class="footer-link">
+                        نحوه ثبت سفارش
+                    </a>
+                    <br>
+                    <br>
+                    <a href="" class="footer-link">
+                        رویه ارسال سفارش
+                    </a>
+                    <br>
+                    <br>
+                    <a href="" class="footer-link">
+                        شیوه‌های پرداخت
+                    </a>
+                </div>
+                <div class="col-lg p-2 text-end">
+                    <h5 class="text-end">
+                        همراه ما باشید!
+                    </h5>
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40"
+                                viewBox="0 0 50 50">
+                                <path
+                                    d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="col-lg-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40"
+                                viewBox="0 0 50 50">
+                                <path
+                                    d="M 50.0625 10.4375 C 48.214844 11.257813 46.234375 11.808594 44.152344 12.058594 C 46.277344 10.785156 47.910156 8.769531 48.675781 6.371094 C 46.691406 7.546875 44.484375 8.402344 42.144531 8.863281 C 40.269531 6.863281 37.597656 5.617188 34.640625 5.617188 C 28.960938 5.617188 24.355469 10.21875 24.355469 15.898438 C 24.355469 16.703125 24.449219 17.488281 24.625 18.242188 C 16.078125 17.8125 8.503906 13.71875 3.429688 7.496094 C 2.542969 9.019531 2.039063 10.785156 2.039063 12.667969 C 2.039063 16.234375 3.851563 19.382813 6.613281 21.230469 C 4.925781 21.175781 3.339844 20.710938 1.953125 19.941406 C 1.953125 19.984375 1.953125 20.027344 1.953125 20.070313 C 1.953125 25.054688 5.5 29.207031 10.199219 30.15625 C 9.339844 30.390625 8.429688 30.515625 7.492188 30.515625 C 6.828125 30.515625 6.183594 30.453125 5.554688 30.328125 C 6.867188 34.410156 10.664063 37.390625 15.160156 37.472656 C 11.644531 40.230469 7.210938 41.871094 2.390625 41.871094 C 1.558594 41.871094 0.742188 41.824219 -0.0585938 41.726563 C 4.488281 44.648438 9.894531 46.347656 15.703125 46.347656 C 34.617188 46.347656 44.960938 30.679688 44.960938 17.09375 C 44.960938 16.648438 44.949219 16.199219 44.933594 15.761719 C 46.941406 14.3125 48.683594 12.5 50.0625 10.4375 Z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="col-lg-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40"
+                                viewBox="0 0 50 50">
+                                <path
+                                    d="M 9 4 C 6.2504839 4 4 6.2504839 4 9 L 4 41 C 4 43.749516 6.2504839 46 9 46 L 41 46 C 43.749516 46 46 43.749516 46 41 L 46 9 C 46 6.2504839 43.749516 4 41 4 L 9 4 z M 9 6 L 41 6 C 42.668484 6 44 7.3315161 44 9 L 44 41 C 44 42.668484 42.668484 44 41 44 L 9 44 C 7.3315161 44 6 42.668484 6 41 L 6 9 C 6 7.3315161 7.3315161 6 9 6 z M 14 11.011719 C 12.904779 11.011719 11.919219 11.339079 11.189453 11.953125 C 10.459687 12.567171 10.011719 13.484511 10.011719 14.466797 C 10.011719 16.333977 11.631285 17.789609 13.691406 17.933594 A 0.98809878 0.98809878 0 0 0 13.695312 17.935547 A 0.98809878 0.98809878 0 0 0 14 17.988281 C 16.27301 17.988281 17.988281 16.396083 17.988281 14.466797 A 0.98809878 0.98809878 0 0 0 17.986328 14.414062 C 17.884577 12.513831 16.190443 11.011719 14 11.011719 z M 14 12.988281 C 15.392231 12.988281 15.94197 13.610038 16.001953 14.492188 C 15.989803 15.348434 15.460091 16.011719 14 16.011719 C 12.614594 16.011719 11.988281 15.302225 11.988281 14.466797 C 11.988281 14.049083 12.140703 13.734298 12.460938 13.464844 C 12.78117 13.19539 13.295221 12.988281 14 12.988281 z M 11 19 A 1.0001 1.0001 0 0 0 10 20 L 10 39 A 1.0001 1.0001 0 0 0 11 40 L 17 40 A 1.0001 1.0001 0 0 0 18 39 L 18 33.134766 L 18 20 A 1.0001 1.0001 0 0 0 17 19 L 11 19 z M 20 19 A 1.0001 1.0001 0 0 0 19 20 L 19 39 A 1.0001 1.0001 0 0 0 20 40 L 26 40 A 1.0001 1.0001 0 0 0 27 39 L 27 29 C 27 28.170333 27.226394 27.345035 27.625 26.804688 C 28.023606 26.264339 28.526466 25.940057 29.482422 25.957031 C 30.468166 25.973981 30.989999 26.311669 31.384766 26.841797 C 31.779532 27.371924 32 28.166667 32 29 L 32 39 A 1.0001 1.0001 0 0 0 33 40 L 39 40 A 1.0001 1.0001 0 0 0 40 39 L 40 28.261719 C 40 25.300181 39.122788 22.95433 37.619141 21.367188 C 36.115493 19.780044 34.024172 19 31.8125 19 C 29.710483 19 28.110853 19.704889 27 20.423828 L 27 20 A 1.0001 1.0001 0 0 0 26 19 L 20 19 z M 12 21 L 16 21 L 16 33.134766 L 16 38 L 12 38 L 12 21 z M 21 21 L 25 21 L 25 22.560547 A 1.0001 1.0001 0 0 0 26.798828 23.162109 C 26.798828 23.162109 28.369194 21 31.8125 21 C 33.565828 21 35.069366 21.582581 36.167969 22.742188 C 37.266572 23.901794 38 25.688257 38 28.261719 L 38 38 L 34 38 L 34 29 C 34 27.833333 33.720468 26.627107 32.990234 25.646484 C 32.260001 24.665862 31.031834 23.983076 29.517578 23.957031 C 27.995534 23.930001 26.747519 24.626988 26.015625 25.619141 C 25.283731 26.611293 25 27.829667 25 29 L 25 38 L 21 38 L 21 21 z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="col-lg-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40"
+                                viewBox="0 0 100 100">
+                                <path
+                                    d="M 36.052734 15.214844 C 35.256112 15.194935 34.468738 15.255769 33.701172 15.390625 C 29.095776 16.199757 25.1848 19.678757 24.068359 24.513672 L 22.304688 32.148438 A 1.0001 1.0001 0 0 0 24.115234 32.923828 C 29.071167 25.408557 37.071625 20.408546 45.998047 19.25 A 1.0001 1.0001 0 0 0 46.095703 17.283203 L 38.460938 15.521484 C 37.655227 15.335405 36.849357 15.234752 36.052734 15.214844 z M 35.998047 17.212891 C 36.662718 17.229665 37.335726 17.31308 38.009766 17.46875 L 41.533203 18.283203 C 35.168789 19.984812 29.520364 23.51508 25.201172 28.490234 L 26.015625 24.964844 C 26.949684 20.919758 30.197505 18.026071 34.037109 17.357422 C 34.677043 17.24598 35.333376 17.196116 35.998047 17.212891 z M 50 22 C 34.547862 22 22 34.547873 22 50 C 22 65.452127 34.547862 78 50 78 C 65.452138 78 78 65.452127 78 50 C 78 34.547873 65.452138 22 50 22 z M 67.652344 22.28125 A 1.0001 1.0001 0 0 0 67.076172 24.115234 C 74.591283 29.070093 79.590465 37.073423 80.75 46 A 1.0001 1.0001 0 0 0 82.716797 46.095703 L 84.478516 38.462891 A 1.0001 1.0001 0 0 0 84.478516 38.460938 C 85.966005 32.014473 81.931837 25.55891 75.486328 24.070312 L 67.851562 22.306641 A 1.0001 1.0001 0 0 0 67.652344 22.28125 z M 50 24 C 64.371259 24 76 35.628751 76 50 C 76 64.371249 64.371259 76 50 76 C 35.628741 76 24 64.371249 24 50 C 24 35.628751 35.628741 24 50 24 z M 71.511719 25.205078 L 75.035156 26.017578 C 80.427647 27.26298 83.77576 32.618233 82.53125 38.011719 L 81.716797 41.537109 C 80.015645 35.172312 76.486225 29.524573 71.511719 25.205078 z M 43.486328 30.748047 C 39.350112 30.748047 35.986328 34.111834 35.986328 38.248047 C 35.986328 42.38426 39.350112 45.748047 43.486328 45.748047 C 47.622544 45.748047 50.986328 42.38426 50.986328 38.248047 C 50.986328 34.111834 47.622544 30.748047 43.486328 30.748047 z M 43.486328 31.748047 C 47.082104 31.748047 49.986328 34.652273 49.986328 38.248047 C 49.986328 41.84382 47.082104 44.748047 43.486328 44.748047 C 39.890552 44.748047 36.986328 41.84382 36.986328 38.248047 C 36.986328 34.652273 39.890552 31.748047 43.486328 31.748047 z M 61.416016 35.994141 C 61.175263 36.005065 60.935773 36.026787 60.699219 36.060547 C 57.860573 36.465671 55.381163 38.489438 54.541016 41.419922 C 53.400484 45.395735 55.705779 49.555836 59.681641 50.695312 C 63.657347 51.834744 67.819502 49.530572 68.958984 45.554688 C 69.364522 44.141191 69.333857 42.701227 68.949219 41.386719 A 0.50005 0.50005 0 1 0 67.990234 41.667969 C 68.323631 42.80746 68.350523 44.048839 67.998047 45.277344 C 67.007529 48.733459 63.413325 50.724944 59.957031 49.734375 C 56.500893 48.743851 54.510485 45.151499 55.501953 41.695312 C 56.475757 38.298625 59.962458 36.317424 63.361328 37.189453 A 0.50005 0.50005 0 1 0 63.609375 36.220703 C 62.875664 36.032459 62.138274 35.961368 61.416016 35.994141 z M 65.503906 37.082031 A 0.50005 0.50005 0 0 0 65.25 38.005859 C 65.987751 38.47635 66.611775 39.087742 67.097656 39.791016 A 0.50005 0.50005 0 1 0 67.919922 39.222656 C 67.359803 38.41193 66.639358 37.707572 65.787109 37.164062 A 0.50005 0.50005 0 0 0 65.503906 37.082031 z M 50 46 C 48.708334 46 47.676923 46.502378 47.001953 47.261719 C 46.326984 48.02106 46 49.013889 46 50 C 46 50.986111 46.326984 51.97894 47.001953 52.738281 C 47.676923 53.497622 48.708334 54 50 54 C 51.291666 54 52.323077 53.497622 52.998047 52.738281 C 53.673016 51.97894 54 50.986111 54 50 C 54 49.013889 53.673016 48.02106 52.998047 47.261719 C 52.323077 46.502378 51.291666 46 50 46 z M 50 47 C 51.041666 47 51.760256 47.372622 52.251953 47.925781 C 52.74365 48.47894 53 49.236111 53 50 C 53 50.763889 52.74365 51.52106 52.251953 52.074219 C 51.760256 52.627378 51.041666 53 50 53 C 48.958334 53 48.239744 52.627378 47.748047 52.074219 C 47.25635 51.52106 47 50.763889 47 50 C 47 49.236111 47.25635 48.47894 47.748047 47.925781 C 48.239744 47.372622 48.958334 47 50 47 z M 38.082031 49.015625 C 37.836392 49.021256 37.593255 49.038858 37.351562 49.068359 C 34.451248 49.422382 31.897587 51.464179 31.042969 54.445312 C 30.743437 55.490466 30.680609 56.549729 30.824219 57.5625 A 0.50008468 0.50008468 0 1 0 31.814453 57.421875 C 31.690063 56.544646 31.743443 55.631503 32.003906 54.722656 C 32.994415 51.267502 36.585777 49.277045 40.041016 50.267578 C 43.49617 51.258087 45.486627 54.849447 44.496094 58.304688 C 43.698995 61.083836 41.216256 62.912328 38.482422 63.009766 A 0.50005 0.50005 0 1 0 38.517578 64.007812 C 41.675744 63.895252 44.54013 61.776928 45.457031 58.580078 C 46.596498 54.605317 44.291252 50.444178 40.316406 49.304688 C 39.571139 49.091037 38.81895 48.998732 38.082031 49.015625 z M 18.199219 53.130859 A 1.0001 1.0001 0 0 0 17.283203 53.904297 L 15.521484 61.537109 A 1.0001 1.0001 0 0 0 15.521484 61.539062 C 14.033995 67.985578 18.068163 74.441089 24.513672 75.929688 L 32.148438 77.693359 A 1.0001 1.0001 0 0 0 32.923828 75.884766 C 25.408717 70.92986 20.409535 62.926577 19.25 54 A 1.0001 1.0001 0 0 0 18.199219 53.130859 z M 56.513672 54.251953 C 52.377456 54.251953 49.013672 57.61574 49.013672 61.751953 C 49.013672 65.888166 52.377456 69.251953 56.513672 69.251953 C 60.649888 69.251953 64.013672 65.888166 64.013672 61.751953 C 64.013672 57.61574 60.649888 54.251953 56.513672 54.251953 z M 56.513672 55.251953 C 60.109448 55.251953 63.013672 58.15618 63.013672 61.751953 C 63.013672 65.347727 60.109448 68.251953 56.513672 68.251953 C 52.917896 68.251953 50.013672 65.347727 50.013672 61.751953 C 50.013672 58.15618 52.917896 55.251953 56.513672 55.251953 z M 18.283203 58.462891 C 19.984355 64.827688 23.513775 70.475427 28.488281 74.794922 L 24.964844 73.982422 C 19.572357 72.73702 16.22424 67.381767 17.46875 61.988281 L 18.283203 58.462891 z M 31.892578 59.001953 A 0.50005 0.50005 0 0 0 31.472656 59.722656 C 31.927818 60.683315 32.58467 61.546259 33.408203 62.242188 A 0.50028436 0.50028436 0 1 0 34.054688 61.478516 C 33.342219 60.876444 32.769838 60.12631 32.375 59.292969 A 0.50005 0.50005 0 0 0 31.892578 59.001953 z M 35.527344 62.458984 A 0.50005 0.50005 0 0 0 35.333984 63.423828 C 35.606179 63.538043 35.890436 63.638897 36.183594 63.722656 C 36.244884 63.740166 36.303375 63.754531 36.359375 63.769531 A 0.50005 0.50005 0 1 0 36.617188 62.804688 C 36.561188 62.789687 36.50774 62.774256 36.457031 62.759766 C 36.204189 62.687528 35.958509 62.599785 35.720703 62.5 A 0.50005 0.50005 0 0 0 35.527344 62.458984 z M 76.716797 66.626953 A 1.0001 1.0001 0 0 0 75.884766 67.076172 C 70.928837 74.591443 62.928375 79.591454 54.001953 80.75 A 1.0001 1.0001 0 0 0 53.904297 82.716797 L 61.539062 84.478516 C 67.984746 85.967154 74.443053 81.932881 75.931641 75.486328 L 77.695312 67.851562 A 1.0001 1.0001 0 0 0 76.716797 66.626953 z M 74.798828 71.509766 L 73.984375 75.035156 C 72.738962 80.428603 67.382551 83.776612 61.990234 82.53125 L 58.466797 81.716797 C 64.831211 80.015188 70.479636 76.48492 74.798828 71.509766 z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <h5 class="text-end">
+                        با ثبت ایمیل، از جدید‌ترین تخفیف‌ها با‌خبر شوید
+                    </h5>
+                    <br>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="ایمیل شما" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">ثبت</button>
+                    </form>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="container-fluid app rounded">
+                <br>
+                <div class="container-app">
+                    <div class="row">
+                        <div class="col-lg-6 p-2">
+                            <div class="row">
+                                <div class="col-lg-2">
+                                    <img src="assets/images/Footer/Application/App1.png" style="height: 50px;">
+                                </div>
+                                <div class="col-lg-6">
+                                    <h5 class="text-end text-white mt-3">
+                                        دانلود اپلیکیشن دیجیکالا
+                                    </h5>
+                                </div>
+                                <div class="col-lg-2"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 p-2">
+                            <div class="row">
+                                <div class="col-lg-3"></div>
+                                <div class="col-lg-9">
+                                    <div class="row mt-2">
+                                        <div class="col-lg p-2">
+                                            <img src="assets/images/Footer/Application/App2.svg"
+                                                class="h-100 rounded w-100" alt="">
+                                        </div>
+                                        <div class="col-lg p-2">
+                                            <img src="assets/images/Footer/Application/App3.svg"
+                                                class="h-100 rounded w-100" alt="">
+                                        </div>
+                                        <div class="col-lg p-2">
+                                            <img src="assets/images/Footer/Application/App4.svg"
+                                                class="h-100 rounded w-100" alt="">
+                                        </div>
+                                        <div class="col-lg p-2">
+                                            <a href="" class="btn btn-light h-100 rounded w-100">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+            </div>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-lg-8 p-2">
+                    <h5 class="text-end">
+                        فروشگاه اینترنتی دیجی‌کالا، بررسی، انتخاب و خرید آنلاین
+                    </h5>
+                    <p class="text-end" style="color: rgb(110, 104, 104);">
+                        یک خرید اینترنتی مطمئن، نیازمند فروشگاهی است که بتواند کالاهایی متنوع، باکیفیت و دارای قیمت
+                        مناسب را در مدت زمانی کوتاه به دست مشتریان خود برساند و ضمانت بازگشت کالا هم داشته باشد؛
+                        ویژگی‌هایی که فروشگاه اینترنتی دیجی‌کالا سال‌هاست بر روی آن‌ها کار کرده و توانسته از این طریق
+                        مشتریان ثابت خود را داشته باشد.
+                    </p>
+                    <a href="" class="text-decoration-none text-info" dir="rtl">مشاهده بیشتر ></a>
+                </div>
+                <div class="col-lg-4 p-2">
+                    <div class="row">
+                        <div class="col-lg">
+                            <img src="assets/images/Footer/Bank/bank1.png" class="img-thumbnail" style="height: 100px;"
+                                alt="">
+                        </div>
+                        <div class="col-lg">
+                            <img src="assets/images/Footer/Bank/bank2.png" class="img-thumbnail" style="height: 100px;"
+                                alt="">
+                        </div>
+                        <div class="col-lg">
+                            <img src="assets/images/Footer/Bank/bank3.png" class="img-thumbnail" style="height: 100px;"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="container">
+                <p class="text-center" style="color: rgb(110, 104, 104);font-size: 10px;">
+                    برای استفاده از مطالب دیجی‌کالا، داشتن «هدف غیرتجاری» و ذکر «منبع» کافیست. تمام حقوق اين وب‌سايت نیز
+                    برای شرکت نوآوران فن آوازه (فروشگاه آنلاین دیجی‌کالا) است.
+                </p>
+            </div>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-lg">
+                    <img src="assets/images/Footer/End-Footer/digi01.svg" alt="" class="h-50">
+                </div>
+                <br>
+                <div class="col-lg">
+                    <img src="assets/images/Footer/End-Footer/digi02.svg" alt="" class="h-50">
+                </div>
+                <br>
+                <div class="col-lg">
+                    <img src="assets/images/Footer/End-Footer/digi03.svg" alt="" class="h-50">
+                </div>
+                <br>
+                <div class="col-lg">
+                    <img src="assets/images/Footer/End-Footer/digi04.svg" alt="" class="h-50">
+                </div>
+                <br>
+                <div class="col-lg">
+                    <img src="assets/images/Footer/End-Footer/digi05.svg" alt="" class="h-50">
+                </div>
+                <br>
+                <div class="col-lg">
+                    <img src="assets/images/Footer/End-Footer/digi06.svg" alt="" class="h-50">
+                </div>
+                <br>
+                <div class="col-lg">
+                    <img src="assets/images/Footer/End-Footer/digi07.svg" alt="" class="h-50">
+                </div>
+                <br>
+                <div class="col-lg">
+                    <img src="assets/images/Footer/End-Footer/digi08.svg" alt="" class="h-50">
+                </div>
+                <br>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-lg">
+                    <img src="assets/images/Footer/End-Footer/digi09.svg" alt="" class="h-75">
+                </div>
+                <br>
+                <div class="col-lg">
+                    <img src="assets/images/Footer/End-Footer/digi10.svg" alt="" class="h-75">
+                </div>
+                <br>
+                <div class="col-lg">
+                    <img src="assets/images/Footer/End-Footer/digi11.svg" alt="" class="h-75">
+                </div>
+                <br>
+                <div class="col-lg">
+                    <img src="assets/images/Footer/End-Footer/digi12.svg" alt="" class="h-75">
+                </div>
+                <br>
+                <div class="col-lg">
+                    <img src="assets/images/Footer/End-Footer/digi13.svg" alt="" class="h-75">
+                </div>
+                <br>
+                <div class="col-lg">
+                    <img src="assets/images/Footer/End-Footer/digi14.svg" alt="" class="h-75">
+                </div>
+                <br>
+                <div class="col-lg">
+                    <img src="assets/images/Footer/End-Footer/digi15.svg" alt="" class="h-75">
+                </div>
+                <br>
+            </div>
+            <br>
+        </footer>
+        <!-- End Footer -->
+    </main>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+        dir="rtl">
+        <div class="modal-dialog">
+            <div class="modal-content w-75">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="d-flex" role="search" dir="rtl">
+                        <input class="form-control me-2" type="search" placeholder="جستجو کنید " aria-label="Search">
+                        <button class="btn btn-outline-light text-dark me-2"
+                            style="border: .5px solid rgb(224, 224, 224);" type="submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-search" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                            </svg>
+                        </button>
+                    </form>
+                    <br>
+                    <br>
+                    <h3 class="fs-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-clock" viewBox="0 0 16 16">
+                            <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
+                            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0" />
+                        </svg>
+                        آخرین جستجو های شما
+                    </h3>
+                    <br>
+                    <div class="badge text-dark shadow-lg rounded-pill" style="border: .5px solid rgb(224, 224, 224);">
+                        <p class="container" style="margin: 3px auto;">
+                            عینک >
+                        </p>
+                    </div>
+                    <br>
+                    <br>
+                    <h3 class="fs-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-clock" viewBox="0 0 16 16">
+                            <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
+                            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0" />
+                        </svg>
+                        بیشترین جستجو ها
+                    </h3>
+                    <br>
+                    <div class="badge text-dark shadow-lg rounded-pill p-2"
+                        style="border: .5px solid rgb(224, 224, 224);">
+                        <p class="container" style="margin: 3px auto;">
+                            عینک >
+                        </p>
+                    </div>
+                    <div class="badge text-dark shadow-lg rounded-pill p-2"
+                        style="border: .5px solid rgb(224, 224, 224);">
+                        <p class="container" style="margin: 3px auto;">
+                            عینک >
+                        </p>
+                    </div>
+                    <div class="badge text-dark shadow-lg rounded-pill p-2"
+                        style="border: .5px solid rgb(224, 224, 224);">
+                        <p class="container" style="margin: 3px auto;">
+                            عینک >
+                        </p>
+                    </div>
+                    <div class="badge text-dark shadow-lg rounded-pill p-2"
+                        style="border: .5px solid rgb(224, 224, 224);">
+                        <p class="container" style="margin: 3px auto;">
+                            عینک >
+                        </p>
+                    </div>
+                    <div class="badge text-dark shadow-lg rounded-pill p-2"
+                        style="border: .5px solid rgb(224, 224, 224);">
+                        <p class="container" style="margin: 3px auto;">
+                            عینک >
+                        </p>
+                    </div>
+                    <div class="badge text-dark shadow-lg rounded-pill p-2"
+                        style="border: .5px solid rgb(224, 224, 224);">
+                        <p class="container" style="margin: 3px auto;">
+                            عینک >
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script>
+        // Start Dropdown
+        const dd1 = document.querySelector('.dropdown-category');
+        const ddcontent = document.querySelector('#dropdown-content');
+        const link1 = document.querySelector('#link-1');
+        const link2 = document.querySelector('#link-2');
+
+        link2.style.display = 'none';
+        dd1.style.height = '0';
+        dd1.style.width = '0';
+        ddcontent.style.display = 'none';
+
+        function opendd() {
+            dd1.style.height = '100%';
+            dd1.style.width = '70%';
+            link1.style.display = 'none';
+            link2.style.display = 'block';
+            ddcontent.style.display = 'block';
+        }
+
+        function closedd() {
+            dd1.style.height = '0';
+            dd1.style.width = '0';
+            link1.style.display = 'block';
+            link2.style.display = 'none';
+            ddcontent.style.display = 'none';
+        }
+
+        // End Dropdown
+
+        // Start Tabs
+        function openTab(tabId) {
+            document.querySelectorAll('.tab-content').forEach(function (tabContent) {
+                tabContent.classList.remove('active');
+            });
+
+            document.querySelectorAll('.tab').forEach(function (tab) {
+                tab.classList.remove('active');
+            });
+
+            document.getElementById(tabId + 'Content').classList.add('active');
+            document.querySelector('[onclick="openTab(\'' + tabId + '\')"]').classList.add('active');
+        }
+
+        openTab('tab1');
+        // End Tabs
+
+        // Start Mobile
+        const menu = document.querySelector('#menu');
+        const menuItem = document.querySelectorAll('#menu>li');
+        const menuLink = document.querySelectorAll('#menu>li>a');
+        const menuOpen = document.querySelector('#open-menu');
+        const menuClose = document.querySelector('#close-menu');
+
+        menuClose.style.display = 'none';
+        menu.style.height = 'auto';
+        menu.style.display = 'none';
+
+        function _Menu() {
+            menu.style.display = 'block';
+            menuClose.style.display = 'block';
+            menuOpen.style.display = 'none';
+        }
+
+        function Close() {
+            menu.style.display = 'none';
+            menuClose.style.display = 'none';
+            menuOpen.style.display = 'block';
+        }
+
+        // End Mobile
+
+        // Start Search Input
+        const openModalBtn = document.getElementById("open");
+        const closeModalBtn = document.getElementById("close");
+        const modal = document.getElementById("Modal");
+
+        modal.style.display = 'none';
+
+        openModalBtn.addEventListener("click", function () {
+            modal.style.display = "block";
+        });
+
+        closeModalBtn.addEventListener("click", function () {
+            modal.style.display = "none";
+        });
+
+        window.addEventListener("click", function (event) {
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        });
+        // End Search Input
+    </script>
+    <script>
+        const swiper = new Swiper('#swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+
+            autoplay: {
+                delay: 3000,
+            },
+        });
+
+        const swiper2 = new Swiper('#slider2', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+            // Default parameters
+
+            // Responsive breakpoints
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                },
+                // when window width is >= 480px
+                480: {
+                    slidesPerView: 1,
+                    spaceBetween: 30
+                },
+                // when window width is >= 640px
+                780: {
+                    slidesPerView: 3,
+                    spaceBetween: 2
+                },
+
+                1200: {
+                    slidesPerView: 7,
+                    spaceBetween: 0
+                }
+            }
+        });
+
+        const swiper3 = new Swiper('#slider3', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+            // Default parameters
+
+            // Responsive breakpoints
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                },
+                // when window width is >= 480px
+                480: {
+                    slidesPerView: 1,
+                    spaceBetween: 30
+                },
+                // when window width is >= 640px
+                780: {
+                    slidesPerView: 3,
+                    spaceBetween: 2
+                },
+
+                1200: {
+                    slidesPerView: 5,
+                    spaceBetween: 0
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
